@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;복습예습/src&apos;&#x0D;&#x0A;- Original project: &apos;ex0210조건문&apos;&#x0D;&#x0A;- Destination element: &apos;복습예습/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     단순if문.switch예습.java&#x0D;&#x0A;     단순if문.자판기.java&#x0D;&#x0A;     단순if문.while예습.java&#x0D;&#x0A;     단순if문.다중if예습.java&#x0D;&#x0A;     단순if문.복습.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=복습예습/src" element1="/src&lt;단순if문{switch예습.java" element2="/src&lt;단순if문{자판기.java" element3="/src&lt;단순if문{while예습.java" element4="/src&lt;단순if문{다중if예습.java" element5="/src&lt;단순if문{복습.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1676246068760" units="5" version="1.0"/>
+</session>

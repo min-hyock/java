@@ -1,0 +1,61 @@
+package while문;
+
+import java.util.Scanner;
+
+public class ex04while문예제 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int num2 = 0;
+		int num3 = 0;
+		
+		while(true){
+		System.out.print("숫자 입력 : ");
+		int input = sc.nextInt();
+		
+		if(input % 2 == 0) 
+			if(input % 2 == 1) {
+			System.out.println("짝수개수 : " + num2);
+			System.out.println("홀수개수 : " + num3);
+			
+		}
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

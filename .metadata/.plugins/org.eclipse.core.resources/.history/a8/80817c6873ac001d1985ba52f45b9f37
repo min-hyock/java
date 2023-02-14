@@ -1,0 +1,49 @@
+package 자료;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class javafestival2_3번 {
+
+	public static void main(String[] args) {
+
+		Random r = new Random();
+		Scanner sc = new Scanner(System.in);
+
+		int num1 = r.nextInt(10);
+		int num2 = r.nextInt(10);
+
+		int chance = 0;
+		
+		while (chance < 5) {
+			System.out.println(num1 + " + " + num2 + " = ");
+			int result = sc.nextInt();
+			chance++;
+			if ((num1 + num2) == result) {
+				System.out.println("SUCCESS!");
+			} else if ((num1 + num2) != result) {
+				System.out.println("Fail...");
+			}else {
+				System.out.println("GAME OVER!");
+			}
+			
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

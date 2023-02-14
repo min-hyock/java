@@ -1,0 +1,10 @@
+package 삼항연산자;
+
+public class ex03농구공개수구하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

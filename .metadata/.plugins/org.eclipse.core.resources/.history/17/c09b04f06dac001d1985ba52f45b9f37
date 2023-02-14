@@ -1,0 +1,43 @@
+package 자료;
+
+import java.util.Scanner;
+
+public class javafestival2_1번 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("현재몸무게 : ");
+		int now = sc.nextInt();
+		System.out.println("목표몸무게 : ");
+		int target = sc.nextInt();
+		
+		int wek = 0;
+		
+		while(true) {
+			System.out.println(wek + "주차 감량 몸무게 :");
+			int minus = sc.nextInt();
+			wek++;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
