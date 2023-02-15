@@ -7,16 +7,15 @@ public class javafestival3_6번 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("입력 : ");
-		int input = sc.nextInt();
+		System.out.println("단수입력 : ");
+		int dan = sc.nextInt();
+		System.out.println("어느 수까지 출력 : ");
+		int max = sc.nextInt();
+		System.out.println(dan + "단");
 
-		int fac = 1;
-
-		for (int i = 1; i <= input; i++) {
-			fac *= i;
+		for (int i = 1; i <= max; i++) {
+			System.out.println(dan + "*" + i + "=" + dan * i);
 		}
-
-		System.out.print("출력 : " + fac);
 
 	}
 

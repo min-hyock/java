@@ -7,15 +7,16 @@ public class javafestival3_5번 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("단수입력 : ");
-		int dan = sc.nextInt();
-		System.out.println("어느 수까지 출력 : ");
-		int max = sc.nextInt();
-		System.out.println(dan + "단");
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
 
-		for (int i = 1; i <= max; i++) {
-			System.out.println(dan + "*" + i + "=" + dan * i);
+		int sum = 0;
+
+		for (int i = 0; i < 8; i++) {
+			sum += input % 10;
+			input /= 10;
 		}
+		System.out.println("합은 " + sum + "입니다.");
 
 	}
 
