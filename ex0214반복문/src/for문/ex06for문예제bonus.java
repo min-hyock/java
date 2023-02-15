@@ -18,27 +18,13 @@ public class ex06for문예제bonus {
 
 		int sum = 0;
 		int num = 1;
- 
-		for (int i = 77; i >= 1; i--) {        // i : 77 ---> 1
+
+		for (int i = 77; i >= 1; i--) { // i : 77 ---> 1
 			sum += i * num;
-			num++;                             // num : 1 ---> 77
+			num++; // num : 1 ---> 77
 		}
 		System.out.println(sum);
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
