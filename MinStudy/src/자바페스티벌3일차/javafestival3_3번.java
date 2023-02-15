@@ -1,4 +1,4 @@
-package 자바페스티벌;
+package 자바페스티벌3일차;
 
 public class javafestival3_3번 {
 

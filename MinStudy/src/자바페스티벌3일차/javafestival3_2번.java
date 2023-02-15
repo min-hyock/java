@@ -1,4 +1,4 @@
-package 자바페스티벌;
+package 자바페스티벌3일차;
 
 public class javafestival3_2번 {
 
@@ -7,9 +7,9 @@ public class javafestival3_2번 {
 		int sum = 0;
 		int num = 1;
 
-		for (int i = 77; i >= 1; i--) { // i : 77 ---> 1
+		for (int i = 77; i >= 1; i--) {
 			sum += i * num;
-			num++; // num : 1 ---> 77
+			num++; 
 		}
 		System.out.println(sum);
 
