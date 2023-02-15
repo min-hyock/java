@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class javafestival2_1번 {
 	public static void main(String[] args) {
-
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("현재몸무게 : ");
 		int now = sc.nextInt();
