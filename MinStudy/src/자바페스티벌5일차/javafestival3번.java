@@ -13,8 +13,8 @@ public class javafestival3번 {
 			array[i] = ran.nextInt(45) + 1;
 			for (int j = 0; j < i; j++) {
 				if (array[i] == array[j]) {
-					array[i] = ran.nextInt(45) + 1;
 					i--;
+					break;
 				}
 			}
 		}

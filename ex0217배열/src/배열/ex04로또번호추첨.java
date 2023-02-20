@@ -1,5 +1,6 @@
 package 배열;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class ex04로또번호추첨 {
@@ -14,42 +15,19 @@ public class ex04로또번호추첨 {
 
 		for (int i = 0; i < array.length; i++) {
 			array[i] = ran.nextInt(10) + 1;
+			
 			for (int j = 0; j < i; j++) {
 				if (array[i] == array[j]) {
-					array[i] = ran.nextInt(10) + 1;
-					i--;
+					i--; // 중복된 숫자가 발생했다면 다시 인덱스번호를 앞으로 보낼 수 있는 코드
+					break; // 만약에 중복된 숫자가 하나라도 발견됐다면 멈추고 올린다.
 				}
 			}
 		}
-		for (int k = 0; k < 5; k++) {
-			System.out.print(array[k]+" ");
-		}
-
-//	array[0] = ran.nextInt(10)+1; 
-
-//		array[1] = ran.nextInt(10) + 1;
-//		if (array[1] == array[0]) {
-//			array[1] = ran.nextInt(10) + 1;
+//		for (int k = 0; k < 5; k++) {
+//			System.out.print(array[k]+" ");
 //		}
-//		System.out.println(array[1]);
-//
-//		array[2] = ran.nextInt(10) + 1;
-//		if (array[2] == array[0]) {
-//			array[2] = ran.nextInt(10) + 1;
-//		}
-//		System.out.println(array[2]);
-//
-//		array[3] = ran.nextInt(10) + 1;
-//		if (array[3] == array[0]) {
-//			array[3] = ran.nextInt(10) + 1;
-//		}
-//		System.out.println(array[3]);
-//
-//		array[4] = ran.nextInt(10) + 1;
-//		if (array[4] == array[0]) {
-//			array[4] = ran.nextInt(10) + 1;
-//		}
-//		System.out.println(array[4]);
+//		Arrays.sort(array); // 오름차순
+		System.out.println(Arrays.toString(array));
 
 	}
 }

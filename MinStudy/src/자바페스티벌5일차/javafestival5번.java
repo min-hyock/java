@@ -10,8 +10,6 @@ public class javafestival5번 {
 
 		for (int i = 0; i < point.length; i++) {
 			for (int j = i + 1; j < point.length; j++) {
-				int min = point[i] - point[j];
-				System.out.print(min + " ");
 			}
 		}
 

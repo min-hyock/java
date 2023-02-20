@@ -1,5 +1,6 @@
 package 자바페스티벌5일차;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -26,9 +27,7 @@ public class javafestival7번 {
 			}
 		}
 
-		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + " ");
-		}
+		System.out.println(Arrays.toString(array));
 
 	}
 }

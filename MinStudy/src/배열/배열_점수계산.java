@@ -1,5 +1,6 @@
 package 배열;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class 배열_점수계산 {
@@ -14,12 +15,11 @@ public class 배열_점수계산 {
 			array[i] = sc.nextInt();
 		}
 
-		System.out.print("입력된 점수 : " + "[ ");
+		System.out.print("입력된 점수 : ");
 		for (int k = 0; k < array.length; k++) {
-			System.out.print(array[k] + " ");
 		}
-		System.out.println("]");
-
+		System.out.println(Arrays.toString(array));
+		
 		int max = array[0];
 		int min = array[0];
 
