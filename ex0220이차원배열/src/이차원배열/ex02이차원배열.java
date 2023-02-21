@@ -18,13 +18,13 @@ public class ex02이차원배열 {
 		int num = num3;
 
 		for (int j = 0; j < array.length; j++) {
-			for (int i = 0; i < array[i].length; i++) {
+			for (int i = 0; i < array[j].length; i++) {
 				array[j][i] = num++;
 			}
 		}
 
 		for (int j = 0; j < array.length; j++) {
-			for (int i = 0; i < array[i].length; i++) {
+			for (int i = 0; i < array[j].length; i++) {
 				System.out.print(array[j][i] + "\t");
 			}
 			System.out.println();

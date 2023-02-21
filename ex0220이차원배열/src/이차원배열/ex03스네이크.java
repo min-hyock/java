@@ -28,5 +28,4 @@ public class ex03스네이크 {
 		}
 
 	}
-
 }
