@@ -7,9 +7,8 @@ public class javafestival13번 {
 
 		String score = "A,A,B,C,D,A,C,D,D,D,F";
 		
-		String[]output = score.split("");
+		String[]output = score.split(",");
 		
-		int cnt = 1;
 		int a = 0;
 		int b = 0;
 		int c = 0;
@@ -18,15 +17,15 @@ public class javafestival13번 {
 		
 		for(int i = 0;i<output.length;i++) {
 			if(output[i].equals("A")) {
-				a += cnt;
+				a++;
 			}else if(output[i].equals("B")) {
-				b += cnt;
+				b++;
 			}else if(output[i].equals("C")) {
-				c += cnt;
+				c++;
 			}else if(output[i].equals("D")) {
-				d += cnt;
+				d++;
 			}else if(output[i].equals("F")) {
-				f += cnt;
+				f++;
 			}
 		}
 		System.out.println("A : "+a+"명");
