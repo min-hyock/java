@@ -7,29 +7,23 @@ public class javafestival5번 {
 	public static void main(String[] args) {
 
 		int[] point = { 92, 32, 52, 9, 81, 2, 68 };
-
-		int minus = 0;
-		int min = 0;
-		int fir = 0;
-		int sec = 0;
-
-		for (int i = 0; i < point.length; i++) {
-			for (int j = i + 1; j < point.length; j++) {
-				if (point[i] - point[j] > 0) {
-					minus = point[i] - point[j];
-					if (minus == 7) {
-						fir = i;
-						sec = j;
-					}
+		
+		int sum = 0;
+		int num = 0;
+		for (int j = 0; j < point.length-1; j++) {
+			for (int i = j+1; i < point.length; i++) {
+				if(point[j] > point[i]) {
+					sum = point[j] - point[i];
+				}else if(point[j] < point[i]){
+					num = point[i] - point[j];
 				}
+				
 			}
 		}
-		System.out.print("result = " + "[" + fir + "," + sec + "]");
-
 		
+//		num = point[3] - point[5] ;
 		
-		
-		
+		System.out.println(sum);
 	}
 
 }
