@@ -11,6 +11,7 @@ public class javafestival26번 {
 		int first = sc.nextInt();
 		System.out.print("두 번쨰 숫자 입력 >> ");
 		int sec = sc.nextInt();
+		
 		int a = first * (sec%10);
 		int b = first * (sec%100/10);
 		int c = first * (sec/100);

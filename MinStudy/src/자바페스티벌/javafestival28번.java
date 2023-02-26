@@ -8,7 +8,7 @@ public class javafestival28번 {
 //
 //		int result = Integer.parseInt(str, 2);
 //
-//		System.out.println(str + "(2)" + " = " + result + "(10)");
+//		System.out.println(str + "(2) = " + result + "(10)");
 
 		// 1. 문자열을 연산이 가능한 구조로 변경
 

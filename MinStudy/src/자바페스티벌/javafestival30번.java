@@ -32,21 +32,6 @@ public class javafestival30번 {
 			System.out.println((char) (i + 97) + ":" + cnt[i]);
 		}
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }

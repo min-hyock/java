@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.net.MulticastSocket"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="OOP기초.Member"/>
+    <fullyQualifiedTypeName name="OOP기초.BankBook"/>
+    <fullyQualifiedTypeName name="학생정보관리프로그램.Student"/>
+    <fullyQualifiedTypeName name="포켓몬게임.Pokemon"/>
+    <fullyQualifiedTypeName name="객체배열.Main"/>
+    <fullyQualifiedTypeName name="객체배열.Pokemon"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="ArrayList.StudentMain"/>
+    <fullyQualifiedTypeName name="ArrayList.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
