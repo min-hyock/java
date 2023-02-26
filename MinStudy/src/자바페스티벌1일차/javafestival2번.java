@@ -17,33 +17,5 @@ public class javafestival2번 {
 		System.out.println("500원 : " + total%10000%5000%1000/500+ "개");
 		System.out.println("100원 : " + total%10000%5000%1000%500/100+ "개");
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
