@@ -19,7 +19,6 @@
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="상속기초.Parent"/>
     <fullyQualifiedTypeName name="상속기초.Child"/>
@@ -29,8 +28,15 @@
     <fullyQualifiedTypeName name="닌텐도게임.Zelda"/>
     <fullyQualifiedTypeName name="닌텐도게임.Dongmul"/>
     <fullyQualifiedTypeName name="닌텐도게임.GameChip"/>
-    <fullyQualifiedTypeName name="추상클래스.Employee"/>
     <fullyQualifiedTypeName name="추상클래스.RegularEmployee"/>
     <fullyQualifiedTypeName name="추상클래스.TempEmployee"/>
     <fullyQualifiedTypeName name="추상클래스.PartTimeEmployee"/>
+    <fullyQualifiedTypeName name="인터페이스.Temp"/>
+    <fullyQualifiedTypeName name="추상클래스.Employee"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.security.interfaces.RSAKey"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
