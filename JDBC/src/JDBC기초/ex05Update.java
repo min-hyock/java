@@ -3,21 +3,26 @@ package JDBC기초;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class ex04selectAll {
+public class ex05Update {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 
-		System.out.println("  ==== 전체 회원 조회 ====");
-		System.out.println("ID      이름     나이     점수");
+		Scanner sc = new Scanner(System.in);
+		// id, pw, 수정할 점수
+		System.out.println(" ==== 회원 정보 수정 ==== ");
+
+		System.out.print("ID 입력 : ");
+		String id = sc.next();
+		System.out.print("PW 입력 : ");
+		String pw = sc.next();
+		System.out.print("수정할 점수를 입력하세요 : ");
+		int update = sc.nextInt();
 
 		Connection conn = null;
 		PreparedStatement psmt = null;
-		ResultSet rs = null;
 
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -28,32 +33,26 @@ public class ex04selectAll {
 
 			conn = DriverManager.getConnection(url, user, password);
 
-//			if (conn != null) {
-//				System.out.println("연결 성공 !!");
-//			} else {
-//				System.out.println("연결 실패 ..");
-//			}
-
-			String sql = "select * from bigdatamember ";
+			String sql = "update bigdatamember set score = ? where id = ? and pw = ? ";
 
 			psmt = conn.prepareStatement(sql);
 
-			rs = psmt.executeQuery();
+			psmt.setInt(1, update);
+			psmt.setString(2, id);
+			psmt.setString(3, pw);
 
-			while (rs.next()) {
-					String uId = rs.getString("id");
-					String uName = rs.getString("name");
-					int uAge = rs.getInt("age");
-					int uScore = rs.getInt("score");
-					System.out.println(uId + "\t" + uName + "\t" + uAge + "\t" + uScore);
-				} 
+			int row = psmt.executeUpdate();
+
+			if (row > 0) {
+				System.out.println("회원 정보가 수정 되었습니다.");
+			} else {
+				System.out.println("입력하신 정보가 잘못 되었습니다.");
+			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			try {
-				if (rs != null)
-					rs.close();
 				if (psmt != null)
 					psmt.close();
 				if (conn != null)
@@ -61,7 +60,6 @@ public class ex04selectAll {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-
 		}
 
 	}
