@@ -22,14 +22,30 @@ public class MemberDTO {
 		this.age = age;
 		this.score = score;
 	}
+
 	// 생성자 오버로딩(중복정의)
 	public MemberDTO(String id, String pw) {
 		this.id = id;
 		this.pw = pw;
 	}
 
+	public MemberDTO(String id, String pw, int nScore) {
+		this.score = nScore;
+		this.id = id;
+		this.pw = pw;
+
+	}
+	
+	public MemberDTO(String id, String name, int age, int score) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.score = score;
+	}
+
 	public void setId(String id) {
 		this.id = id;
+		
 	}
 
 	public void setPw(String pw) {

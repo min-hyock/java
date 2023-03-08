@@ -6,15 +6,30 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="과목을"/>
 		<list key="findhistory">
-			<item value="s"/>
+			<item value="과목을"/>
+			<item value="다시 선택해 주세요"/>
+			<item value="/t"/>
+			<item value="/"/>
+			<item value="다시 선택"/>
+			<item value="이전"/>
+			<item value="경남"/>
+			<item value="정답입력"/>
+			<item value="정답"/>
+			<item value="정답을"/>
+			<item value="java"/>
+			<item value="현재점수"/>
+			<item value="score"/>
+			<item value="마이"/>
+			<item value="과목"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="340"/>
-		<item key="DIALOG_Y_ORIGIN" value="263"/>
+		<item key="DIALOG_X_ORIGIN" value="1201"/>
+		<item key="DIALOG_Y_ORIGIN" value="249"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

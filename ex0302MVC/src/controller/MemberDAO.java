@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Random;
 
 import model.MemberDTO;
 
@@ -121,5 +123,65 @@ public class MemberDAO {
 			getClose();
 		}
 		return row;
+	}
+
+	// 회원정보수정 메소드
+	public int update(MemberDTO dto) {
+		int row = 0;
+
+		try {
+			getConn();
+			
+			Random ran = new Random();
+			int java = ran.nextInt(25)+1;
+			
+			String sql = "update bigdatamember set score = ? where id = ? and pw = ? ";
+
+			psmt = conn.prepareStatement(sql);
+
+			psmt.setInt(1, dto.getScore());
+			psmt.setString(2, dto.getId());
+			psmt.setInt(3, java);
+
+			row = psmt.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+		return row;
+	}
+
+	// 전체 회원 조회 메소드
+	public ArrayList<MemberDTO> findAll() {
+		MemberDTO dto = null;
+		ArrayList<MemberDTO>list = new ArrayList<MemberDTO>();
+		
+		try {
+			getConn();
+
+			String sql = "select * from bigdatamember ";
+
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				String Id = rs.getString("id");
+				String Name = rs.getString("name");
+				int Age = rs.getInt("age");
+				int Score = rs.getInt("score");
+				dto = new MemberDTO(Id, Name, Age, Score);
+				list.add(dto);
+			}
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+
+		return list;
 	}
 }
