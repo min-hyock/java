@@ -50,9 +50,12 @@
     <fullyQualifiedTypeName name="model.QuizDTO"/>
     <fullyQualifiedTypeName name="controller.StudentDAO"/>
     <fullyQualifiedTypeName name="model.StudentDTO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="controller.RankDAO"/>
     <fullyQualifiedTypeName name="model.RankDTO"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="Question6.MusicPlayer"/>
+    <fullyQualifiedTypeName name="Question6.MusicController"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Question6.MusicVO"/>
 </qualifiedTypeNameHistroy>

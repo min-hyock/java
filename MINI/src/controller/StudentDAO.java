@@ -56,7 +56,6 @@ public class StudentDAO {
          row = psmt.executeUpdate();
 
       } catch (Exception e) {
-
       } finally {
          getClose();
       }
